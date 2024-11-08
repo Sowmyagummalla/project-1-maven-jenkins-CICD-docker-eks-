@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: regapp
-        image: sowmyagummalla/project1:latest
+        image: sowmyagummalla/project1:1.0
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -43,4 +43,4 @@ spec:
     - port: 8080
       targetPort: 8080
 
-  type: LoadBalancer
+  type: NodePort
